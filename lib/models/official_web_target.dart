@@ -1,0 +1,1 @@
+enum OfficialWebTarget { mis, portal }

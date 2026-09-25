@@ -1,0 +1,14 @@
+// Safe repository defaults keep every real identity empty or invalid.
+// A developer-owned ignored file supplies one complete Apple Developer lane;
+// without it, device signing fails because no team owns the placeholder IDs.
+BNBU_IOS_DEVELOPMENT_TEAM =
+BNBU_IOS_DEVELOPMENT_BUNDLE_IDENTIFIER = invalid.local.bnbu.ios.development
+BNBU_IOS_DEVELOPMENT_WIDGET_BUNDLE_IDENTIFIER = invalid.local.bnbu.ios.development.widgets
+BNBU_IOS_DEVELOPMENT_WATCH_BUNDLE_IDENTIFIER = invalid.local.bnbu.ios.development.watch
+BNBU_IOS_DEVELOPMENT_APP_GROUP_IDENTIFIER = group.invalid.local.bnbu.ios.development
+BNBU_IOS_APP_URL_SCHEME = $(BNBU_IOS_DEVELOPMENT_BUNDLE_IDENTIFIER)
+CODE_SIGNING_ALLOWED = YES
+CODE_SIGNING_REQUIRED = YES
+CODE_SIGN_STYLE = Automatic
+
+#include? "Signing.local.xcconfig"

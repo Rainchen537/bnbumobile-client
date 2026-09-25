@@ -1,0 +1,11 @@
+// Safe repository defaults for local Debug/Profile builds.
+BNBU_APPLE_IDENTITY_CONFIGURED = NO
+BNBU_MACOS_APP_BUNDLE_IDENTIFIER = invalid.local.bnbu.macos.development
+BNBU_MACOS_WIDGET_BUNDLE_IDENTIFIER = invalid.local.bnbu.macos.development.widgets
+BNBU_MACOS_APP_GROUP_IDENTIFIER = group.invalid.local.bnbu.macos.development
+BNBU_IOS_APP_URL_SCHEME = $(BNBU_MACOS_APP_BUNDLE_IDENTIFIER)
+BNBU_IOS_APP_GROUP_IDENTIFIER = $(BNBU_MACOS_APP_GROUP_IDENTIFIER)
+CODE_SIGNING_ALLOWED = NO
+CODE_SIGNING_REQUIRED = NO
+
+#include? "Signing.local.xcconfig"

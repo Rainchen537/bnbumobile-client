@@ -1,0 +1,35 @@
+{
+  "allowedApplicationSigner": {
+    "kind": "appleDesignatedRequirement",
+    "value": "REPLACE_WITH_APPLICATION_DESIGNATED_REQUIREMENT"
+  },
+  "allowedHelperSigner": {
+    "kind": "appleDesignatedRequirement",
+    "value": "REPLACE_WITH_HELPER_DESIGNATED_REQUIREMENT"
+  },
+  "allowedInstallRoots": [
+    "/Applications"
+  ],
+  "allowedStrategies": [
+    {
+      "provider": "platformDirectory",
+      "strategy": "directoryReplace"
+    }
+  ],
+  "allowedTargetClasses": [
+    "applicationBundle",
+    "protectedApplication"
+  ],
+  "applicationPackageId": "app.example.bnbu.macos",
+  "helperServiceId": "app.example.bnbu.macos.desktop-updater-helper",
+  "minimumHelperProtocolVersion": 1,
+  "policyId": "app.example.bnbu.macos.desktop-updater-policy",
+  "policyVersion": 1,
+  "releaseRootPublicKeys": [
+    {
+      "algorithm": "ed25519",
+      "keyId": "REPLACE_WITH_KEY_ID",
+      "publicKeyBase64": "REPLACE_WITH_PUBLIC_KEY"
+    }
+  ]
+}

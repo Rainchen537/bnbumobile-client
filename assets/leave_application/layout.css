@@ -1,0 +1,186 @@
+/* Scoped to the recognized workflow 57 form; school dialogs keep their own DOM. */
+html.bnbu-leave-document {
+  --leave-canvas: #f3f5f7;
+  --leave-surface: #fff;
+  --leave-text: #1b2a35;
+  --leave-muted: #647482;
+  --leave-line: #dce3e9;
+  --leave-accent: #006aa0;
+  background: var(--leave-canvas);
+}
+html.bnbu-leave-dark {
+  --leave-canvas: #15191e;
+  --leave-surface: #20262d;
+  --leave-text: #ecf1f5;
+  --leave-muted: #b1bdc8;
+  --leave-line: #3c4753;
+  --leave-accent: #77c6ef;
+  color-scheme: dark;
+}
+.bnbu-leave-shell {
+  min-width: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+table.bnbu-leave-form {
+  display: block !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 760px !important;
+  margin: 0 auto !important;
+  padding: 12px 16px 32px !important;
+  background: var(--leave-canvas) !important;
+  color: var(--leave-text) !important;
+  border: 0 !important;
+  box-sizing: border-box !important;
+  font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  text-align: left !important;
+}
+.bnbu-leave-form > colgroup { display: none !important; }
+.bnbu-leave-form > tbody,
+.bnbu-leave-form > thead,
+.bnbu-leave-form > tfoot { display: block !important; }
+tr.bnbu-leave-row {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  background: var(--leave-surface) !important;
+  border-bottom: 1px solid var(--leave-line) !important;
+}
+.bnbu-leave-cell {
+  display: block !important;
+  box-sizing: border-box !important;
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  padding: 12px !important;
+  border: 0 !important;
+  background: transparent !important;
+  color: var(--leave-text) !important;
+  font: inherit !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  text-align: left !important;
+}
+.bnbu-leave-cell > span,
+.bnbu-leave-cell > p,
+.bnbu-leave-cell > div { max-width: 100% !important; }
+.bnbu-leave-label { color: var(--leave-muted) !important; font-size: 14px !important; }
+.bnbu-leave-cell[data-bnbu-leave-title] { font-size: 12px !important; color: var(--leave-muted) !important; }
+.bnbu-leave-cell[data-bnbu-leave-title]::before {
+  content: attr(data-bnbu-leave-title);
+  display: block;
+  margin-bottom: 2px;
+  color: var(--leave-text);
+  font-size: 16px;
+}
+.bnbu-leave-form:not(.bnbu-leave-show-profile) .bnbu-leave-profile-row { display: none !important; }
+.bnbu-leave-profile-heading { position: relative; padding-right: 84px !important; }
+.bnbu-leave-heading [data-bnbu-leave-owned="profile-toggle"] { position: absolute; right: 12px; top: 10px; font-size: 14px; }
+.bnbu-leave-full { grid-column: 1 / -1; }
+tr.bnbu-leave-heading {
+  display: block !important;
+  margin-top: 20px !important;
+  border-radius: 16px 16px 0 0;
+  font-weight: 600 !important;
+}
+.bnbu-leave-heading .bnbu-leave-cell { font-size: 18px !important; }
+.bnbu-leave-heading .bnbu-leave-cell[data-bnbu-leave-title] { font-size: 12px !important; }
+.bnbu-leave-heading .bnbu-leave-cell[data-bnbu-leave-title]::before { font-size: 18px; }
+tr.bnbu-leave-spacer, .bnbu-leave-cell.bnbu-leave-empty { display: none !important; }
+.bnbu-leave-form input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]),
+.bnbu-leave-form textarea, .bnbu-leave-form select {
+  box-sizing: border-box !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  min-height: 44px;
+  border: 1px solid var(--leave-line);
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-size: 16px !important;
+  color: var(--leave-text);
+  background-color: var(--leave-surface);
+}
+.bnbu-leave-form textarea { width: 100% !important; min-height: 112px; }
+.bnbu-leave-form button {
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--leave-line);
+  border-radius: 10px;
+  background-color: var(--leave-surface);
+  color: var(--leave-accent);
+  font: inherit;
+}
+.bnbu-leave-form button:disabled { opacity: .55; }
+.bnbu-leave-form input[type="radio"], .bnbu-leave-form input[type="checkbox"] {
+  accent-color: var(--leave-accent);
+}
+.bnbu-leave-form :focus-visible { outline: 2px solid var(--leave-accent); outline-offset: 2px; }
+.bnbu-leave-form img { max-width: 100%; }
+.bnbu-leave-choices, .bnbu-leave-choices > tbody {
+  display: block !important;
+  width: 100% !important;
+  min-width: 0 !important;
+}
+.bnbu-leave-choices tr { display: flex !important; flex-wrap: wrap; height: auto !important; }
+.bnbu-leave-choices td { width: auto !important; height: auto !important; padding: 8px 4px !important; border: 0 !important; }
+/* Nested tables remain intact unless their observed course headers match. */
+table.bnbu-leave-courses, .bnbu-leave-courses > tbody {
+  display: block !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+}
+.bnbu-leave-courses > colgroup { display: none !important; }
+.bnbu-leave-course-header {
+  /* Keep the school's select-all checkbox and header controls available. */
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 8px;
+  height: auto !important;
+  font-size: 12px !important;
+  color: var(--leave-muted);
+}
+.bnbu-leave-course-header > td, .bnbu-leave-course-header > th { width: auto !important; }
+tr.bnbu-leave-course {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 12px 0 !important;
+  padding: 12px;
+  border: 1px solid var(--leave-line);
+  border-radius: 12px;
+  height: auto !important;
+  background: var(--leave-canvas);
+}
+.bnbu-leave-course-cell {
+  display: block !important;
+  width: auto !important;
+  min-width: 0 !important;
+  height: auto !important;
+  padding: 6px 0 !important;
+  border: 0 !important;
+  color: var(--leave-text) !important;
+  background: transparent !important;
+  overflow-wrap: anywhere;
+  grid-column: 1 / -1;
+}
+.bnbu-leave-course-cell.bnbu-leave-code { grid-column: auto; }
+.bnbu-leave-course-cell[data-bnbu-leave-label]::before {
+  content: attr(data-bnbu-leave-label);
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  color: var(--leave-muted);
+}
+@media (min-width: 700px) {
+  tr.bnbu-leave-row.bnbu-leave-double { grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) minmax(0, 1fr) minmax(0, 1.5fr); }
+}
+@media (max-width: 359px) {
+  table.bnbu-leave-form { padding-left: 10px !important; padding-right: 10px !important; }
+  .bnbu-leave-cell { padding: 10px 8px !important; }
+}

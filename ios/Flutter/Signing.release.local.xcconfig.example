@@ -1,0 +1,16 @@
+// Non-working template: replace the Team and personal prefix in the ignored copy.
+// Release optimization does not authorize distribution; declare the purpose explicitly.
+BNBU_APPLE_IDENTITY_CONFIGURED = YES
+// Select local-acceptance or distribution explicitly after reading LOCAL.md.
+BNBU_APPLE_IDENTITY_PURPOSE = unconfigured
+BNBU_APPLE_DEVELOPER_PREFIX =
+BNBU_IOS_RELEASE_TEAM = YOUR_TEAM_ID
+BNBU_IOS_RELEASE_BUNDLE_IDENTIFIER = me.bnbu.app
+BNBU_IOS_RELEASE_WIDGET_BUNDLE_IDENTIFIER = me.bnbu.app.widgets
+BNBU_IOS_RELEASE_WATCH_BUNDLE_IDENTIFIER = me.bnbu.app.watchkitapp
+BNBU_IOS_RELEASE_APP_GROUP_IDENTIFIER = group.me.bnbu.app
+CODE_SIGNING_ALLOWED = YES
+CODE_SIGNING_REQUIRED = YES
+CODE_SIGN_STYLE = Automatic
+// For personal Release acceptance: use local-acceptance, set your prefix,
+// and prepend <prefix>. to all base IDs (after group./TEAM. for App Groups).

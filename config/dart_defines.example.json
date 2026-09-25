@@ -1,0 +1,18 @@
+{
+  "ISPACE_BASE_URL": "https://ispace.bnbu.edu.cn",
+  "ISPACE_COOKIE_DOMAIN": "ispace.bnbu.edu.cn",
+  "BNBU_SSO_BASE_URL": "https://sso.bnbu.edu.cn",
+  "BNBU_MIS_BASE_URL": "https://mis.bnbu.edu.cn",
+  "BNBU_PORTAL_BASE_URL": "https://portal.bnbu.edu.cn",
+  "BNBU_COOKIE_DOMAIN": "bnbu.edu.cn",
+  "BNBU_MIS_SERVICE_ID": "3bvkl8pks1ki04nirus0g",
+  "BNBU_PORTAL_SERVICE_ID": "na3j8azrv30vamqac8yg",
+  "BNBU_MAIL_IMAP_HOST": "imap.exmail.qq.com",
+  "BNBU_MAIL_SMTP_HOST": "smtp.exmail.qq.com",
+  "BNBU_MAIL_WEB_BASE_URL": "https://mail.bnbu.edu.cn",
+  "SYNC_SERVICE_BASE_URL": "https://api.bnbu.yunwai.cloud",
+  "PRIVACY_POLICY_URL": "https://bnbu.yunwai.cloud/app-privacy.html",
+  "UPDATE_BASE_URL": "https://bnbu.yunwai.cloud/updates",
+  "DUODUO_WEB_BASE_URL": "https://www.duoduo.link",
+  "DUODUO_PRIVACY_POLICY_URL": "https://static.duoduo.link/privacy.html"
+}

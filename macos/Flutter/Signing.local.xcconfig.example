@@ -1,0 +1,9 @@
+// Non-working template: replace the Team and personal prefix in the ignored copy.
+// Release optimization does not authorize distribution; declare the purpose explicitly.
+BNBU_APPLE_IDENTITY_CONFIGURED = YES
+BNBU_APPLE_IDENTITY_PURPOSE = development
+BNBU_APPLE_DEVELOPER_PREFIX = yourname
+BNBU_MACOS_TEAM_IDENTIFIER = YOURTEAMID
+BNBU_MACOS_APP_BUNDLE_IDENTIFIER = yourname.me.bnbu.app.macos.debug
+BNBU_MACOS_WIDGET_BUNDLE_IDENTIFIER = yourname.me.bnbu.app.macos.debug.widgets
+BNBU_MACOS_APP_GROUP_IDENTIFIER = YOURTEAMID.yourname.me.bnbu.app.macos.debug

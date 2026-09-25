@@ -1,0 +1,12 @@
+// Non-working template: replace the Team and personal prefix in the ignored copy.
+// Release optimization does not authorize distribution; declare the purpose explicitly.
+BNBU_APPLE_IDENTITY_CONFIGURED = YES
+// Select local-acceptance or distribution explicitly after reading LOCAL.md.
+BNBU_APPLE_IDENTITY_PURPOSE = unconfigured
+BNBU_APPLE_DEVELOPER_PREFIX =
+BNBU_MACOS_TEAM_IDENTIFIER = YOURTEAMID
+BNBU_MACOS_APP_BUNDLE_IDENTIFIER = me.bnbu.app.macos
+BNBU_MACOS_WIDGET_BUNDLE_IDENTIFIER = me.bnbu.app.macos.widgets
+BNBU_MACOS_APP_GROUP_IDENTIFIER = YOURTEAMID.me.bnbu.app.macos
+// For personal Release acceptance: use local-acceptance, set your prefix,
+// and prepend <prefix>. to all base IDs (after group./TEAM. for App Groups).

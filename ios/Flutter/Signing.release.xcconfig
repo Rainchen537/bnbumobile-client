@@ -1,0 +1,15 @@
+// Safe repository defaults keep every real identity empty or invalid.
+// The ignored .local/apple-signing/LOCAL.md declares whether this worktree's
+// Release input is for local acceptance or distribution. A complete identity
+// must be injected explicitly; this build configuration grants no upload rights.
+BNBU_IOS_RELEASE_TEAM =
+BNBU_IOS_RELEASE_BUNDLE_IDENTIFIER = invalid.local.bnbu.ios.release
+BNBU_IOS_RELEASE_WIDGET_BUNDLE_IDENTIFIER = invalid.local.bnbu.ios.release.widgets
+BNBU_IOS_RELEASE_WATCH_BUNDLE_IDENTIFIER = invalid.local.bnbu.ios.release.watch
+BNBU_IOS_RELEASE_APP_GROUP_IDENTIFIER = group.invalid.local.bnbu.ios.release
+BNBU_IOS_APP_URL_SCHEME = $(BNBU_IOS_RELEASE_BUNDLE_IDENTIFIER)
+CODE_SIGNING_ALLOWED = YES
+CODE_SIGNING_REQUIRED = YES
+CODE_SIGN_STYLE = Automatic
+
+#include? "Signing.release.local.xcconfig"

@@ -1,0 +1,28 @@
+import '../../models/assistant_models.dart';
+
+const assistantClientToolSources = <String, AssistantContextSource>{
+  'get_academic_profile': AssistantContextSource.academicProfile,
+  'get_courses': AssistantContextSource.courses,
+  'get_term_courses': AssistantContextSource.termCourses,
+  'search_ispace_course_catalog': AssistantContextSource.ispaceCourseCatalog,
+  'get_ispace_activity': AssistantContextSource.ispaceActivity,
+  'get_ispace_quiz_attempt': AssistantContextSource.ispaceQuizAttempt,
+  'read_ispace_content': AssistantContextSource.ispaceToolResults,
+  'get_ispace_module': AssistantContextSource.ispaceToolResults,
+  'get_ispace_course_grades': AssistantContextSource.ispaceToolResults,
+  'get_deadlines': AssistantContextSource.deadlines,
+  'get_schedule': AssistantContextSource.schedule,
+  'read_academic_calendar_document': AssistantContextSource.academicCalendar,
+  'get_academic_calendar': AssistantContextSource.academicCalendar,
+  'get_exam_timetable': AssistantContextSource.examTimetable,
+  'get_mail_summaries': AssistantContextSource.mailSummaries,
+  'get_selected_mail': AssistantContextSource.selectedMail,
+  'get_mail_radar': AssistantContextSource.mailToolResults,
+  'find_mail_messages': AssistantContextSource.mailToolResults,
+  'read_mail_attachment_text': AssistantContextSource.mailToolResults,
+  'read_mail_messages': AssistantContextSource.mailToolResults,
+  'get_school_activities': AssistantContextSource.schoolActivities,
+  'get_ta_courses': AssistantContextSource.taCourses,
+  'get_current_page': AssistantContextSource.currentPage,
+  'get_current_location': AssistantContextSource.currentLocation,
+};

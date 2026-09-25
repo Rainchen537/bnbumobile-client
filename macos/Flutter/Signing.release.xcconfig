@@ -1,0 +1,11 @@
+// Safe repository defaults for unsigned Release compilation.
+BNBU_APPLE_IDENTITY_CONFIGURED = NO
+BNBU_MACOS_APP_BUNDLE_IDENTIFIER = invalid.local.bnbu.macos.release
+BNBU_MACOS_WIDGET_BUNDLE_IDENTIFIER = invalid.local.bnbu.macos.release.widgets
+BNBU_MACOS_APP_GROUP_IDENTIFIER = group.invalid.local.bnbu.macos.release
+BNBU_IOS_APP_URL_SCHEME = $(BNBU_MACOS_APP_BUNDLE_IDENTIFIER)
+BNBU_IOS_APP_GROUP_IDENTIFIER = $(BNBU_MACOS_APP_GROUP_IDENTIFIER)
+CODE_SIGNING_ALLOWED = NO
+CODE_SIGNING_REQUIRED = NO
+
+#include? "Signing.release.local.xcconfig"

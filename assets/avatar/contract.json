@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "asset": "student_avatar.riv",
+  "artboard": "StudentAvatar",
+  "state_machine": "AvatarState",
+  "view_model": "StudentAvatarModel",
+  "enum_properties": [
+    "body",
+    "skinTone",
+    "hairStyle",
+    "hairColor",
+    "top",
+    "bottom",
+    "shoes",
+    "accessory",
+    "mood"
+  ],
+  "boolean_properties": [
+    "reduceMotion"
+  ],
+  "color_properties": [
+    "accentColor"
+  ],
+  "trigger_properties": [
+    "greet",
+    "celebrate",
+    "think"
+  ]
+}

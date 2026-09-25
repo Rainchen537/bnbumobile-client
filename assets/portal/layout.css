@@ -1,0 +1,346 @@
+/* Presentation-only overrides for the BNBU unified Portal on narrow screens.
+   Every rule is scoped under .bnbu-portal-document and an owned class, so the
+   original desktop rendering is restored by removing the root class. No school
+   node, handler, value or cookie is created, cloned, moved or removed. */
+
+html.bnbu-portal-document,
+html.bnbu-portal-document body {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  overflow-x: hidden !important;
+  -webkit-text-size-adjust: 100% !important;
+}
+
+/* Legacy Portal framesets declare a fixed desktop width. Let the shell shrink
+   without touching the frame documents themselves. */
+html.bnbu-portal-document.bnbu-portal-wide body {
+  zoom: 1;
+}
+
+html.bnbu-portal-document .bnbu-portal-shell,
+html.bnbu-portal-document .bnbu-portal-shell > * {
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Fixed-width legacy wrappers are the main source of horizontal scroll. */
+html.bnbu-portal-document .bnbu-portal-fixed {
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+}
+
+html.bnbu-portal-document .bnbu-portal-scroll {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Touch targets: legacy icon buttons and menu anchors are often ~20px. */
+html.bnbu-portal-document .bnbu-portal-touch {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  padding: 6px 8px !important;
+  box-sizing: border-box !important;
+}
+
+html.bnbu-portal-document .bnbu-portal-text {
+  font-size: 15px !important;
+  line-height: 1.5 !important;
+  word-break: break-word;
+}
+
+/* Desktop-only decoration cannot be reached on a phone and only widens the
+   layout: keep it in the accessibility tree but out of the flow. */
+html.bnbu-portal-document .bnbu-portal-hidden {
+  display: none !important;
+}
+
+html.bnbu-portal-document .bnbu-portal-table {
+  width: 100% !important;
+  max-width: 100% !important;
+  table-layout: fixed !important;
+}
+
+html.bnbu-portal-document .bnbu-portal-table th,
+html.bnbu-portal-document .bnbu-portal-table td {
+  white-space: normal !important;
+  word-break: break-word !important;
+}
+
+html.bnbu-portal-document .bnbu-portal-stack,
+html.bnbu-portal-document .bnbu-portal-stack > tbody > tr {
+  display: block !important;
+  width: 100% !important;
+}
+
+html.bnbu-portal-document .bnbu-portal-stack > tbody > tr > th,
+html.bnbu-portal-document .bnbu-portal-stack > tbody > tr > td {
+  display: block !important;
+  width: auto !important;
+  min-width: 0 !important;
+  text-align: left !important;
+}
+
+/* Dark presentation follows the App theme without painting school surfaces
+   that already carry their own background images. */
+html.bnbu-portal-document.bnbu-portal-dark body {
+  background-color: #121212 !important;
+  color: #e6e6e6 !important;
+}
+
+html.bnbu-portal-document.bnbu-portal-dark .bnbu-portal-surface {
+  background-color: #1c1c1e !important;
+  color: #e6e6e6 !important;
+  border-color: #2c2c2e !important;
+}
+
+html.bnbu-portal-document.bnbu-portal-dark a:not(.bnbu-portal-keep-color) {
+  color: #8ab4f8 !important;
+}
+
+/* The App draws its own title bar; a duplicated in-page banner wastes the
+   first screenful on a phone. */
+html.bnbu-portal-document .bnbu-portal-banner {
+  display: none !important;
+}
+
+/* Intrinsic icons stay intrinsic: applying width:100% to every image and its
+   parent stretches the school's header symbols and application tiles. */
+html.bnbu-portal-document .bnbu-portal-media {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Observed E9 shell. Keep school nodes and handlers; only reflow at phone size. */
+@media (max-width: 699px) {
+  html.bnbu-portal-document.bnbu-portal-e9 body {
+    background: #f3f5f8 !important;
+  }
+  html.bnbu-portal-e9 #container .theme-37,
+  html.bnbu-portal-e9 #container .bnbu-portal-shell > div,
+  html.bnbu-portal-e9 #container .layout-top-container,
+  html.bnbu-portal-e9 #container .layout-top-header,
+  html.bnbu-portal-e9 #container .main-container,
+  html.bnbu-portal-e9 #container .layout-main-content,
+  html.bnbu-portal-e9 #container .e9theme-layout-main,
+  html.bnbu-portal-e9 #container .e9theme-layout-route,
+  html.bnbu-portal-e9 #container .homepage {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    left: 0 !important;
+  }
+  html.bnbu-portal-e9 #container .layout-top-container,
+  html.bnbu-portal-e9 #container .layout-top-header {
+    position: relative !important;
+    height: auto !important;
+  }
+  html.bnbu-portal-e9 #container .layout-top-header {
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 12px !important;
+  }
+  html.bnbu-portal-e9 #container .layout-top-header > div {
+    position: relative !important;
+    float: none !important;
+    left: auto !important;
+    right: auto !important;
+    margin: 0 !important;
+    height: auto !important;
+    max-width: 100% !important;
+  }
+  html.bnbu-portal-e9 #container .header-logo { width: 180px !important; }
+  html.bnbu-portal-e9 #container .header-logo img { max-width: 100% !important; height: auto !important; }
+  html.bnbu-portal-e9 #container .header-account { width: auto !important; margin-left: auto !important; }
+  html.bnbu-portal-e9 #container .header-right { width: auto !important; }
+  html.bnbu-portal-e9 #container .header-menu { order: 4; flex: 0 0 100%; }
+  html.bnbu-portal-e9 #container .header-search { order: 5; flex: 0 0 100%; }
+  html.bnbu-portal-e9 #container .menu-container,
+  html.bnbu-portal-e9 #container .menu-content {
+    width: 100% !important;
+    height: 44px !important;
+    overflow-x: auto !important;
+  }
+  html.bnbu-portal-e9 #container .pt-menu-horizontal {
+    display: flex !important;
+    width: max-content !important;
+    height: 44px !important;
+    line-height: 44px !important;
+  }
+  html.bnbu-portal-e9 #container .pt-menu-horizontal > li {
+    float: none !important;
+    height: 44px !important;
+    line-height: 44px !important;
+    flex: 0 0 auto;
+  }
+  html.bnbu-portal-e9 #container .main-container,
+  html.bnbu-portal-e9 #container .layout-main-content,
+  html.bnbu-portal-e9 #container .e9theme-layout-main,
+  html.bnbu-portal-e9 #container .e9theme-layout-route {
+    position: relative !important;
+    top: auto !important;
+    height: auto !important;
+    overflow: visible !important;
+    padding: 0 !important;
+  }
+  html.bnbu-portal-e9 #container .homepage { padding: 8px 12px 24px !important; background: #f3f5f8 !important; }
+  html.bnbu-portal-e9 #container .homepage > div { margin: 0 !important; }
+  html.bnbu-portal-e9 #container .layouttable,
+  html.bnbu-portal-e9 #container .layouttable > tbody,
+  html.bnbu-portal-e9 #container .layouttable > tbody > tr {
+    display: block !important;
+    width: 100% !important;
+  }
+  html.bnbu-portal-e9 #container .layouttable > thead { display: none !important; }
+  html.bnbu-portal-e9 #container .layouttable > tbody > tr > td:not([style*="display: none"]) {
+    display: block !important;
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  html.bnbu-portal-e9 #container .layouttable .group { width: 100% !important; }
+  html.bnbu-portal-e9 #container .layouttable .item {
+    margin: 0 0 12px !important;
+    border-radius: 10px;
+    background: white !important;
+    overflow: hidden;
+  }
+  html.bnbu-portal-e9 #container .layouttable .item > .header {
+    background: none !important;
+    border-bottom: 1px solid #e4e9ee !important;
+  }
+  html.bnbu-portal-e9 #container .layouttable .header .title { color: #172735 !important; font-size: 15px !important; }
+  html.bnbu-portal-e9 #container .layouttable .content_view {
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 10px !important;
+    box-sizing: border-box !important;
+  }
+  html.bnbu-portal-e9 #container .layouttable .portal-news-img-content .content_view { max-height: 260px; overflow-y: auto; }
+  html.bnbu-portal-e9 #container .layouttable .tabContant { height: auto !important; min-height: 0 !important; }
+  html.bnbu-portal-e9 #container .ecodeQuickApp .appContent,
+  html.bnbu-portal-e9 #container .ecodeServiceCenter .appContent { margin: 12px 0 0 !important; }
+  html.bnbu-portal-e9 #container .bnbu-portal-app-grid { width: 100% !important; display: grid !important; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px 6px; }
+  html.bnbu-portal-e9 #container .bnbu-portal-app { width: 100% !important; min-width: 0; margin: 0 !important; }
+  html.bnbu-portal-e9 #container .bnbu-portal-app .appName {
+    width: 100% !important; height: auto !important; min-height: 34px;
+    line-height: 1.35 !important; white-space: normal !important;
+    overflow: visible !important; font-size: 12px;
+  }
+  html.bnbu-portal-e9 #container .ecodeQuickApp .wea-tab-left,
+  html.bnbu-portal-e9 #container .ecodeServiceCenter .wea-tab-left { width: 100% !important; }
+  html.bnbu-portal-e9 #container .bjsfdx-commonuseWfsContent { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  html.bnbu-portal-e9 #container .ecodeServiceCenter .wf { width: 100% !important; margin: 0 !important; box-sizing: border-box; }
+  html.bnbu-portal-e9 #container .ecodeServiceCenter .wfName { max-width: calc(100% - 48px); }
+  html.bnbu-portal-e9.bnbu-portal-dark #container .homepage { background: #14171b !important; }
+  html.bnbu-portal-e9.bnbu-portal-dark #container .layouttable .item { background: #1d2228 !important; color: #eef2f6; }
+  html.bnbu-portal-e9.bnbu-portal-dark #container .layouttable .header .title { color: #eef2f6 !important; }
+  html.bnbu-portal-e9 #container .layout-top-header > .header-logo {
+    flex: 0 0 100%; height: 36px !important; padding: 0 !important;
+  }
+  html.bnbu-portal-e9 #container .header-logo img { width: 156px !important; }
+  html.bnbu-portal-e9 #container .layout-top-header > .header-right {
+    flex: 1 1 160px; height: 44px !important; min-width: 160px;
+  }
+  html.bnbu-portal-e9 #container .layout-top-header > .header-account {
+    flex: 0 1 auto; height: 44px !important; margin-left: auto !important;
+  }
+  html.bnbu-portal-e9 #container .layout-top-header > .header-search { height: 44px !important; }
+  html.bnbu-portal-e9 #container .e9header-quick-search {
+    position: relative !important; top: 0 !important; left: 0 !important;
+    width: 100% !important; margin: 0 !important; height: 40px !important;
+    box-sizing: border-box;
+  }
+  html.bnbu-portal-e9 #container .e9header-quick-search-content { width: calc(100% - 48px) !important; }
+  html.bnbu-portal-e9 #container .homepage { background-image: none !important; }
+  html.bnbu-portal-e9 #container .ecodeQuickApp .apps,
+  html.bnbu-portal-e9 #container .ecodeQuickApp .appContent,
+  html.bnbu-portal-e9 #container .ecodeQuickApp > .content,
+  html.bnbu-portal-e9 #container .ecodeServiceCenter > .content {
+    height: auto !important; max-height: none !important;
+    overflow: visible !important; padding: 0 !important;
+  }
+  html.bnbu-portal-e9 #container .bnbu-portal-app > div:not(.appName) { margin: 0 auto !important; }
+  html.bnbu-portal-e9 #container .ecodeServiceCenter .wf {
+    display: flex !important; align-items: center; background-image: none !important;
+    border: 1px solid #e4e9ee; border-radius: 6px; min-height: 52px; height: auto !important;
+  }
+  html.bnbu-portal-e9 #container .ecodeServiceCenter .wfName {
+    flex: 1; white-space: normal !important; line-height: 1.5 !important;
+    height: auto !important; padding: 10px 12px !important;
+  }
+  html.bnbu-portal-e9 #container .ecodeServiceCenter .wfSc { flex: 0 0 40px; position: relative !important; }
+  html.bnbu-portal-e9 #container .theme-37 { background: #f3f5f8 !important; }
+  html.bnbu-portal-e9 #container .e9header-quick-search { display: flex !important; align-items: center; }
+  html.bnbu-portal-e9 #container .e9header-quick-search-icon { flex: 0 0 32px; height: 40px !important; line-height: 40px !important; }
+  html.bnbu-portal-e9 #container .ecodeQuickApp .appContent { margin-left: 0 !important; }
+  html.bnbu-portal-e9 #container .menu-container,
+  html.bnbu-portal-e9 #container .menu-content { overflow-y: hidden !important; scrollbar-width: none; }
+  html.bnbu-portal-e9 #container .menu-content::-webkit-scrollbar { display: none; }
+  html.bnbu-portal-e9 #container .layouttable .header .title {
+    background: none !important; border-radius: 0 !important;
+    color: #172735 !important; font-weight: 600;
+  }
+  html.bnbu-portal-e9 #container .layouttable .header .icon img {
+    filter: grayscale(1) brightness(.35);
+  }
+  html.bnbu-portal-e9.bnbu-portal-dark #container .theme-37 { background: #14171b !important; }
+  html.bnbu-portal-e9.bnbu-portal-dark #container .layouttable .header .title { color: #eef2f6 !important; }
+  html.bnbu-portal-e9.bnbu-portal-dark #container .layouttable .header .icon img { filter: grayscale(1) brightness(2); }
+  html.bnbu-portal-e9.bnbu-portal-dark #container .appName,
+  html.bnbu-portal-e9.bnbu-portal-dark #container .wfName { color: #eef2f6 !important; }
+  /* The school uses a complete ribbon bitmap as its collapse icon. Keep its
+     hit target/handler, and render a compact disclosure mark over that node. */
+  html.bnbu-portal-e9 #container .layouttable .header .icon {
+    left: 10px !important; top: 0 !important; width: 28px !important; height: 40px !important;
+  }
+  html.bnbu-portal-e9 #container .layouttable .header .icon img {
+    width: 28px !important; height: 40px !important; opacity: 0;
+  }
+  html.bnbu-portal-e9 #container .layouttable .header .icon::after {
+    content: ''; position: absolute; left: 8px; top: 13px;
+    width: 8px; height: 8px; border-right: 1.5px solid currentColor;
+    border-bottom: 1.5px solid currentColor; transform: rotate(45deg); pointer-events: none;
+  }
+  html.bnbu-portal-e9 #container .layouttable .header .title { left: 44px !important; }
+  html.bnbu-portal-e9 #container .bnbu-portal-app > div:not(.appName) {
+    width: 64px !important; height: 64px !important; background-size: 64px auto !important;
+  }
+  html.bnbu-portal-e9 #container .bnbu-portal-app > div > img { width: 56px !important; top: 4px !important; }
+  html.bnbu-portal-e9 #container .bnbu-portal-app > img { right: max(0px, calc((100% - 64px) / 2)) !important; }
+  html.bnbu-portal-e9 #container .ecodeQuickApp .wea-tab > .ant-row,
+  html.bnbu-portal-e9 #container .ecodeServiceCenter .wea-tab > .ant-row {
+    display: flex !important; flex-direction: column; height: auto !important;
+  }
+  html.bnbu-portal-e9 #container .ecodeQuickApp .wea-tab-right,
+  html.bnbu-portal-e9 #container .ecodeServiceCenter .wea-tab-right {
+    position: relative !important; width: 100% !important; height: auto !important;
+    left: auto !important; right: auto !important; top: auto !important;
+  }
+  html.bnbu-portal-e9 #container .ecodeServiceCenter .wea-tab-right { margin: 8px 0 0 !important; }
+  html.bnbu-portal-e9 #container .ecodeServiceCenter .ant-tabs-nav-scroll {
+    overflow-x: auto !important; scrollbar-width: none;
+  }
+  html.bnbu-portal-e9 #container .ecodeQuickApp .ant-tabs-nav-container,
+  html.bnbu-portal-e9 #container .ecodeServiceCenter .ant-tabs-nav-container {
+    width: 100% !important; padding: 0 !important;
+  }
+  html.bnbu-portal-e9.bnbu-portal-dark #container .layouttable .content,
+  html.bnbu-portal-e9.bnbu-portal-dark #container .layouttable .content_view {
+    background-color: transparent !important; color: #eef2f6 !important;
+  }
+  html.bnbu-portal-e9.bnbu-portal-dark #container .ecodeServiceCenter .wf {
+    background-color: #272d35 !important; border-color: #39424c;
+  }
+}

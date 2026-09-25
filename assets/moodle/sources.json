@@ -1,0 +1,107 @@
+{
+  "project": "Moodle",
+  "commit": "090baf556eb30b6baf9dc5fb8f3ac879e186b266",
+  "license": "GPL-3.0-or-later",
+  "assets": [
+    {
+      "module": "assign",
+      "path": "mod/assign/pix/monologo.svg",
+      "sha256": "a6d5d7ac4f693985619fd89f8b5d4a5b0a54d68e1ba7477fc997c3ed3898ffa2"
+    },
+    {
+      "module": "quiz",
+      "path": "mod/quiz/pix/monologo.svg",
+      "sha256": "94c10ac625fa30588e15ff7cb965dc1c95000be41d3068818287933a7dcf34f8"
+    },
+    {
+      "module": "forum",
+      "path": "mod/forum/pix/monologo.svg",
+      "sha256": "53828672841c82a6777edfe55b6b2e24cab1ee33c0246519e7ae14201d6380da"
+    },
+    {
+      "module": "resource",
+      "path": "mod/resource/pix/monologo.svg",
+      "sha256": "70952a941b5eaec5033b517284c74d12c313f9681d07280be31f19b6704a5117"
+    },
+    {
+      "module": "folder",
+      "path": "mod/folder/pix/monologo.svg",
+      "sha256": "933c103a7fda9f6204db792a76237e97faa29e4e85b3d91015bdf071db7eb6a1"
+    },
+    {
+      "module": "page",
+      "path": "mod/page/pix/monologo.svg",
+      "sha256": "59c130a1956dcdd367d1bf7b34fa3690d308224b7d5c2a489cecff10ae4798fa"
+    },
+    {
+      "module": "url",
+      "path": "mod/url/pix/monologo.svg",
+      "sha256": "86e8e0c79276a71455468e700a16b30843ca132f7daa8c94c9501ab4e2e324cc"
+    },
+    {
+      "module": "book",
+      "path": "mod/book/pix/monologo.svg",
+      "sha256": "09164bb7b33f1da3f357b1de87db035f87a587b663d1a5f9bc68776aa55de804"
+    },
+    {
+      "module": "choice",
+      "path": "mod/choice/pix/monologo.svg",
+      "sha256": "e88ac734c9d06cf6ae823c77b23c131df3c5a95e87aa98028bc067ff3479e868"
+    },
+    {
+      "module": "feedback",
+      "path": "mod/feedback/pix/monologo.svg",
+      "sha256": "95bcbd223c8b9b28716458ee9fc52a4cbbb5f3ace5914411e157286ce4adbf27"
+    },
+    {
+      "module": "lesson",
+      "path": "mod/lesson/pix/monologo.svg",
+      "sha256": "f263b3506f8bda68fa3441a38140d16c602543763bbd79f18e18a10800193f57"
+    },
+    {
+      "module": "workshop",
+      "path": "mod/workshop/pix/monologo.svg",
+      "sha256": "b0d9fd6e0b235c0c6a02b5e2f94b3565d968baf9c1f5f30a6d9c0d2412d35963"
+    },
+    {
+      "module": "survey",
+      "path": "mod/survey/pix/monologo.svg",
+      "sha256": "2883d8fc88a31349dd38b74f29a846b04763bc41b75758be4a04e4cffc01cd99"
+    },
+    {
+      "module": "wiki",
+      "path": "mod/wiki/pix/monologo.svg",
+      "sha256": "88d05b1de9a09b9e5effa930aab183edac45a39aa085f57a171c0f3ac35c8ffd"
+    },
+    {
+      "module": "glossary",
+      "path": "mod/glossary/pix/monologo.svg",
+      "sha256": "154afbb058a6813beb4a452253a41d5b2e8c4ce505639e658d985051584ee239"
+    },
+    {
+      "module": "scorm",
+      "path": "mod/scorm/pix/monologo.svg",
+      "sha256": "c1a234a3453e1630cdb8166b6fa203e12ffab61d7ba5b56ffbcc1c24d30e5d42"
+    },
+    {
+      "module": "imscp",
+      "path": "mod/imscp/pix/monologo.svg",
+      "sha256": "22d18c1375563e1c97a50b1d76645c3bce7a9ff1439d6d07b423c9f99fc1b23a"
+    },
+    {
+      "module": "data",
+      "path": "mod/data/pix/monologo.svg",
+      "sha256": "a2a62b8195725c9a0718336437a8f73e8247e57adb0035de6062623b34b6cbac"
+    },
+    {
+      "module": "lti",
+      "path": "mod/lti/pix/monologo.svg",
+      "sha256": "f2c1c16ca2d0f6e1b01a0cf811c4ff89b5f3aeb81b37ed057bbe413f622c5533"
+    },
+    {
+      "module": "label",
+      "path": "mod/label/pix/monologo.svg",
+      "sha256": "ba0825f35b8be46de0bcbaedab041c125d8c7f39ed19c996ad1c2e6e9be9ad3b"
+    }
+  ]
+}

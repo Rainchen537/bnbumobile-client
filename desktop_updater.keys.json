@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "profileId": "477125897afba06c070aef294fd12533",
+  "feedUrl": "https://bnbu.yunwai.cloud/updates/desktop/app-archive.json",
+  "activeKeyId": "release-bd0db0d7a868e6633b4f944b",
+  "publicKeys": {
+    "release-bd0db0d7a868e6633b4f944b": "nO9YRqnNG72cWkrpHz6iNzwM0Uc9UH9fB8mtaTIgLeQ="
+  }
+}

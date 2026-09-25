@@ -1,0 +1,13 @@
+// Non-working template: replace the Team and personal prefix in the ignored copy.
+// Release optimization does not authorize distribution; declare the purpose explicitly.
+BNBU_APPLE_IDENTITY_CONFIGURED = YES
+BNBU_APPLE_IDENTITY_PURPOSE = development
+BNBU_APPLE_DEVELOPER_PREFIX = yourname
+BNBU_IOS_DEVELOPMENT_TEAM = YOUR_TEAM_ID
+BNBU_IOS_DEVELOPMENT_BUNDLE_IDENTIFIER = yourname.me.bnbu.app.debug
+BNBU_IOS_DEVELOPMENT_WIDGET_BUNDLE_IDENTIFIER = yourname.me.bnbu.app.debug.widgets
+BNBU_IOS_DEVELOPMENT_WATCH_BUNDLE_IDENTIFIER = yourname.me.bnbu.app.debug.watchkitapp
+BNBU_IOS_DEVELOPMENT_APP_GROUP_IDENTIFIER = group.yourname.me.bnbu.app.debug
+CODE_SIGNING_ALLOWED = YES
+CODE_SIGNING_REQUIRED = YES
+CODE_SIGN_STYLE = Automatic

@@ -1,0 +1,8 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Keep trust anchors byte-stable across Windows and POSIX checkouts.
+*.pem text eol=lf
+
+# Preserve the reproducible third-party editor bundle, including template strings.
+assets/mail_editor/editor.js -whitespace linguist-generated=true
