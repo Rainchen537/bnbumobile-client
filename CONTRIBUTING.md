@@ -15,4 +15,4 @@
 
 ## 首个公开快照的历史贡献者
 
-感谢 [Rainchen537](https://github.com/Rainchen537)、[liyouran0820](https://github.com/liyouran0820) 与 [TokenLimitExceeded](https://github.com/TokenLimitExceeded) 对原项目的贡献。公开仓从新历史起步，历史贡献不会因此被归为首个快照提交者独有。后续社区贡献继续保留署名。
+感谢 [Rainchen537](https://github.com/Rainchen537)、[liyouran0820](https://github.com/liyouran0820)、[TokenLimitExceeded](https://github.com/TokenLimitExceeded) 与 [@chentyke](https://github.com/chentyke) 对原项目的贡献。公开仓从新历史起步，历史贡献不会因此被归为首个快照提交者独有。后续社区贡献继续保留署名。
